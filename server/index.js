@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
     res.send("Hello World! 2022");
 });
 
+app.get("/api/hello", (req, res) => {
+    res.send("Hello World! 2022");
+});
+
 // 회원가입
 app.post("/api/users/register", (req, res) => {
     const user = new User(req.body);

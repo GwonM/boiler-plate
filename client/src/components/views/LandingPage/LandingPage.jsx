@@ -4,7 +4,7 @@ import axios from "axios";
 function LandingPage() {
     useEffect(() => {
         axios.get("/api/hello").then((res) => {
-            console.log(res.data);
+            console.log(res);
         });
     }, []);
 
